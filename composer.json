@@ -1,0 +1,53 @@
+{
+  "name": "daikazu/simple-contact-form",
+  "description": "A simple contact form",
+  "license": "MIT",
+  "keywords": [
+    "simple",
+    "contact",
+    "form"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "~5.7.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.7.0",
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Daikazu\\SimpleContactForm\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Daikazu\\SimpleContactForm\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Daikazu\\SimpleContactForm\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
