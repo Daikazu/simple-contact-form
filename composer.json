@@ -3,6 +3,7 @@
   "description": "A simple contact form",
   "license": "MIT",
   "keywords": [
+    "laravel",
     "simple",
     "contact",
     "form"
@@ -10,8 +11,8 @@
   "type": "library",
   "authors": [
     {
-      "name": "",
-      "email": ""
+      "name": "Mike Wall",
+      "email": "daikazu@gmail.com"
     }
   ],
   "require": {
