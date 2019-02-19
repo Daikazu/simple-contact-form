@@ -1,7 +1,7 @@
 # Simple Contact Form
 
 [![Build Status](https://travis-ci.org/daikazu/simple-contact-form.svg?branch=master)](https://travis-ci.org/daikazu/simple-contact-form)
-[![styleci](https://styleci.io/repos/CHANGEME/shield)](https://styleci.io/repos/169582594)
+[![styleci](https://styleci.io/repos/169582594/shield)](https://styleci.io/repos/169582594)
 <!--[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/daikazu/simple-contact-form/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/daikazu/simple-contact-form/?branch=master)-->
 <!--[![SensioLabsInsight](https://insight.sensiolabs.com/projects/CHANGEME/mini.png)](https://insight.sensiolabs.com/projects/CHANGEME)-->
 <!--[![Coverage Status](https://coveralls.io/repos/github/daikazu/simple-contact-form/badge.svg?branch=master)](https://coveralls.io/github/daikazu/simple-contact-form?branch=master)-->
