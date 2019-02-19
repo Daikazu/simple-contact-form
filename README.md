@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/daikazu/simple-contact-form.svg?branch=master)](https://travis-ci.org/daikazu/simple-contact-form)
 [![styleci](https://styleci.io/repos/CHANGEME/shield)](https://styleci.io/repos/CHANGEME)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/daikazu/simple-contact-form/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/daikazu/simple-contact-form/?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/CHANGEME/mini.png)](https://insight.sensiolabs.com/projects/CHANGEME)
-[![Coverage Status](https://coveralls.io/repos/github/daikazu/simple-contact-form/badge.svg?branch=master)](https://coveralls.io/github/daikazu/simple-contact-form?branch=master)
+<!--[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/daikazu/simple-contact-form/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/daikazu/simple-contact-form/?branch=master)-->
+<!--[![SensioLabsInsight](https://insight.sensiolabs.com/projects/CHANGEME/mini.png)](https://insight.sensiolabs.com/projects/CHANGEME)-->
+<!--[![Coverage Status](https://coveralls.io/repos/github/daikazu/simple-contact-form/badge.svg?branch=master)](https://coveralls.io/github/daikazu/simple-contact-form?branch=master)-->
 
-[![Packagist](https://img.shields.io/packagist/v/daikazu/simple-contact-form.svg)](https://packagist.org/packages/daikazu/simple-contact-form)
-[![Packagist](https://poser.pugx.org/daikazu/simple-contact-form/d/total.svg)](https://packagist.org/packages/daikazu/simple-contact-form)
-[![Packagist](https://img.shields.io/packagist/l/daikazu/simple-contact-form.svg)](https://packagist.org/packages/daikazu/simple-contact-form)
+<!--[![Packagist](https://img.shields.io/packagist/v/daikazu/simple-contact-form.svg)](https://packagist.org/packages/daikazu/simple-contact-form)-->
+<!--[![Packagist](https://poser.pugx.org/daikazu/simple-contact-form/d/total.svg)](https://packagist.org/packages/daikazu/simple-contact-form)-->
+<!--[![Packagist](https://img.shields.io/packagist/l/daikazu/simple-contact-form.svg)](https://packagist.org/packages/daikazu/simple-contact-form)-->
 
 Package description: CHANGE ME
 
@@ -39,12 +39,21 @@ Daikazu\SimpleContactForm\Facades\SimpleContactForm::class,
 ### Publish Configuration File
 
 ```bash
-php artisan vendor:publish --provider="Daikazu\SimpleContactForm\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Daikazu\SimpleContactForm\ServiceProvider" --tag="simple-contact-form-config"
+```
+
+### Publish View File to `/resource/views/vendor/` folder
+```bash
+php artisan vendor:publish --provider="Daikazu\SimpleContactForm\ServiceProvider" --tag="simple-contact-form-views"
 ```
 
 ## Usage
 
-CHANGE ME
+```blade
+
+ @include('simple-contact-form::form')
+
+```
 
 ## Security
 

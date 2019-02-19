@@ -9,6 +9,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     const CONFIG_PATH = __DIR__ . '/../config/simple-contact-form.php';
     const VIEW_PATH = __DIR__ . '/../resources/views';
     const ROUTES_PATH = __DIR__ . '/../routes/web.php';
+    const MIGRATION_PATH = __DIR__ . '/../database/migrations';
 
 
     public function boot()
@@ -26,6 +27,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
         $this->loadRoutesFrom(self::ROUTES_PATH);
 
+        $this->loadMigrationsFrom(self::MIGRATION_PATH);
 
 
     }
@@ -37,8 +39,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             self::NAMESPACE
         );
 
-        $this->app->bind('simple-contact-form', function () {
-            return new SimpleContactForm();
-        });
+
+
+//        $this->app->bind('simple-contact-form', function () {
+//            return new SimpleContactForm();
+//        });
     }
 }
