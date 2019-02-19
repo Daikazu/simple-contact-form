@@ -2,5 +2,6 @@
 
 namespace Daikazu\SimpleContactForm;
 
-class SimpleContactForm{
+class SimpleContactForm
+{
 }
