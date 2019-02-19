@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class ContactUs extends Model
 {
-
     protected $table = 'contact_us';
 
     protected $casts = [
@@ -14,5 +13,4 @@ class ContactUs extends Model
     ];
 
     protected $fillable = ['name', 'email', 'message', 'meta'];
-
 }

@@ -2,13 +2,11 @@
 
 namespace Daikazu\SimpleContactForm\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Mail;
+use Illuminate\Http\Request;
 
 class SimpleContactFormController
 {
-
-
     public function store(Request $request)
     {
         $request->validate([
@@ -34,10 +32,6 @@ class SimpleContactFormController
             $message->subject(config('simple-contact-form.subject'));
         });
 
-
         return back()->with('success', config('simple-contact-form.success_message'));
-
     }
-
-
 }

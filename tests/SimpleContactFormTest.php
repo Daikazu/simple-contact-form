@@ -2,9 +2,9 @@
 
 namespace Daikazu\SimpleContactForm\Tests;
 
-use Daikazu\SimpleContactForm\Facades\SimpleContactForm;
-use Daikazu\SimpleContactForm\ServiceProvider;
 use Orchestra\Testbench\TestCase;
+use Daikazu\SimpleContactForm\ServiceProvider;
+use Daikazu\SimpleContactForm\Facades\SimpleContactForm;
 
 class SimpleContactFormTest extends TestCase
 {
