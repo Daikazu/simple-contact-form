@@ -49,6 +49,12 @@ php artisan vendor:publish --provider="Daikazu\SimpleContactForm\ServiceProvider
 
 ## Usage
 
+Migrate `contact_us` table
+
+```
+php artisan migrate
+```
+
 ```blade
 
  @include('simple-contact-form::form')
