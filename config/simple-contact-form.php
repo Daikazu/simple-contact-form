@@ -7,8 +7,8 @@ return [
     'success_message' => env('SIMPLE_CONTACT_SUCCESS_MESSAGE', 'Thanks for contacting us!'),
 
     // Store the Request info in Database
-    'store_request'   => true,
+    'store_request'   => env('SIMPLE_CONTACT_STORE_REQUEST', true),
 
     // Send Email
-    'send_email'      => true,
+    'send_email'      => env('SIMPLE_CONTACT_SEND_EMAIL', true),
 ];
