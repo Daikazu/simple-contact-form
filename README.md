@@ -61,6 +61,11 @@ php artisan migrate
 
 ```
 
+## TODO
+- tests
+
+
+
 ## Security
 
 If you discover any security related issues, please email 
@@ -70,6 +75,10 @@ instead of using the issue tracker.
 
 - [](https://github.com/daikazu/simple-contact-form)
 - [All contributors](https://github.com/daikazu/simple-contact-form/graphs/contributors)
+
+
+
+
 
 This package is bootstrapped with the help of
 [melihovv/laravel-package-generator](https://github.com/melihovv/laravel-package-generator).

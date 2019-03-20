@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'to_address'      => env('SIMPLE_CONTACT_FORM_TO_ADDRESS'),
-    'from_address'    => env('SIMPLE_CONTACT_FORM_FROM_ADDRESS'),
+    'to_address'      => env('SIMPLE_CONTACT_FORM_TO_ADDRESS', 'example@mail.com'),
+    'from_address'    => env('SIMPLE_CONTACT_FORM_FROM_ADDRESS','example@mail.com'),
     'subject'         => env('SIMPLE_CONTACT_FORM_SUBJECT', 'Contact Form Request'),
     'success_message' => env('SIMPLE_CONTACT_SUCCESS_MESSAGE', 'Thanks for contacting us!'),
 

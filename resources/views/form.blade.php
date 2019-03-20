@@ -1,5 +1,5 @@
 <form action="{{route('simple-contact-form.email')}}" method="post">
-
+    @honeypot
     @csrf()
 
 

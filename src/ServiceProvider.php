@@ -2,6 +2,8 @@
 
 namespace Daikazu\SimpleContactForm;
 
+use Spatie\Honeypot\ProtectAgainstSpam;
+
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     const NAMESPACE = 'simple-contact-form';
@@ -34,8 +36,16 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             self::NAMESPACE
         );
 
+        $this->app['router']->pushMiddlewareToGroup('web', ProtectAgainstSpam::class);
+
+
 //        $this->app->bind('simple-contact-form', function () {
 //            return new SimpleContactForm();
 //        });
+
+
+
+
+
     }
 }
