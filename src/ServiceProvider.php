@@ -36,7 +36,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             self::NAMESPACE
         );
 
-        $this->app['router']->pushMiddlewareToGroup('web', ProtectAgainstSpam::class);
+//         $this->app['router']->pushMiddlewareToGroup('web', ProtectAgainstSpam::class);
 
 
 //        $this->app->bind('simple-contact-form', function () {
