@@ -1,7 +1,9 @@
-<form action="{{route('simple-contact-form.email')}}" method="post">
-    @honeypot
-    @csrf()
+<form action="{{route('simple-contact-form.email')}}#contact-form" method="post" id="contact-form">
+    @csrf
 
+    @if($message = Session::get('simple-contact-form-success'))
+       <p>{{$message}}</p>
+    @else
 
     <label for="name">Name</label>
     <input id="name" type="text" name="name" value="{{old('name')}}">
@@ -16,5 +18,7 @@
     <div>{{ $errors->first('message') }}</div>
 
     <button type="submit">Submit</button>
+
+    @endif
 
 </form>

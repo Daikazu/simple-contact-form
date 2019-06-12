@@ -38,6 +38,7 @@ class SimpleContactFormController
             });
         }
 
-        return back()->with('success', config('simple-contact-form.success_message'));
+
+        return back()->with('simple-contact-form-success', config('simple-contact-form.success_message'));
     }
 }
